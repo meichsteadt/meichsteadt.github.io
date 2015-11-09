@@ -72,6 +72,9 @@ h6 {
     background-color: #fff;
 }
 
+.bg-blue {
+    background: rgb(150,177,210);
+}
 .btn-primary {
     border-color: #4771a5;
     text-transform: uppercase;
@@ -191,7 +194,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
+    border-color: rgb(255,255,255);
 }
 
 .navbar-default .navbar-toggle {
@@ -262,6 +265,16 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+    }
+
+    .navbar-right {
+        font-size: .8em;
+    }
+}
+
+@media(min-width:992px) {
+    .navbar-right {
+        font-size: 1em;
     }
 }
 
@@ -919,3 +932,27 @@ video#bgvid {
     }
 }
 
+.textBox {
+    background-color: #fff;
+    border: 5px solid #777;
+    border-radius: 25px;
+    opacity: .8;
+    margin: 5px 0px;
+    padding: 15px 0px 0px 0px;
+}
+
+#about {
+    color: #fff;
+
+}
+
+/*.bgLogo {
+    background-image: url(../img/bcLogo.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+*/
