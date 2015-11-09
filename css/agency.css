@@ -68,6 +68,10 @@ h6 {
     background-color: #222;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
 .btn-primary {
     border-color: #4771a5;
     text-transform: uppercase;
@@ -175,7 +179,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: Arial,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #4771a5;
 }
 
@@ -265,7 +269,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    /*background-image: url(../img/header-bg.jpg); */
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -277,6 +281,11 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    color: #337ab7;
+}
+
+header .section-subheading {
+    color:#337ab7;
 }
 
 header .intro-text .intro-lead-in {
@@ -885,3 +894,28 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #4771a5;
 }
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url(../img/bg.png) no-repeat;
+    background-size: cover; 
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background-image: url(../img/bg.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
