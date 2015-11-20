@@ -182,8 +182,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: Arial,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #4771a5;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -264,7 +265,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .navbar-right {
@@ -320,7 +321,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
 
@@ -381,9 +382,14 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+#services img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    margin: 10px 0 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -454,7 +460,7 @@ section h3.section-subheading {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: 15px 0 30px;
     }
 }
 
@@ -770,6 +776,15 @@ footer span.copyright {
     line-height: 40px;
 }
 
+footer span a {
+    color: #333;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
 footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
@@ -919,13 +934,20 @@ video#bgvid {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-image: url(../img/bg.png) no-repeat;
+    background-image: url(../img/bg.png);
     background-size: cover; 
 }
 
-@media screen and (max-device-width: 800px) {
-    html {
-         background-image: url(../img/bg.png) #000 no-repeat center center fixed;
+@media(max-width: 800px) {
+    header, section#services {
+         background-image: url(../img/bg.png);
+         background-attachment: scroll;
+         background-position: center center;
+         background-repeat: none;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         background-size: cover;
+         -o-background-size: cover;
     }
     #bgvid {
         display: none;
@@ -944,6 +966,10 @@ video#bgvid {
 #about {
     color: #fff;
 
+}
+
+th {
+    text-align: center;
 }
 
 /*.bgLogo {
