@@ -36,6 +36,7 @@ var cbpAnimatedHeader = (function() {
 	} */
 
 	function scrollY() {
+		var sy = scrollY();
 		return window.pageYOffset || docElem.scrollTop;
 	}
 

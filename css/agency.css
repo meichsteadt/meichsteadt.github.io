@@ -283,9 +283,9 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    /*background-image: url(../img/header-bg.jpg); */
+    /*background-image: url(../img/bg.jpg); */
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -302,13 +302,14 @@ header .section-subheading {
     color:#337ab7;
 }
 
-header .intro-text .intro-lead-in {
+header .intro-text .intro-lead-in p{
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     font-style: italic;
-    line-height: 22px;
+    line-height: 25px;
 }
+
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
@@ -317,6 +318,15 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+}
+
+header .intro-text .intro-heading-small {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
 }
 
 @media(min-width:768px) {
@@ -386,6 +396,8 @@ section h3.section-subheading {
     margin: 0 auto;
     border: 7px solid #fff;
 }
+
+
 
 #portfolio .portfolio-item {
     right: 0;
@@ -664,6 +676,10 @@ section h3.section-subheading {
     }
 }
 
+.team {
+    overflow: auto;
+}
+
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -795,6 +811,7 @@ footer ul.quicklinks {
 
 ul.social-buttons {
     margin-bottom: 0;
+
 }
 
 ul.social-buttons li a {
@@ -934,16 +951,17 @@ video#bgvid {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.jpg);
     background-size: cover; 
 }
 
 @media(max-width: 800px) {
-    header, section#services {
-         background-image: url(../img/bg.png);
+    header {
+         background-image: url(../img/bg.jpg);
          background-attachment: scroll;
          background-position: center center;
-         background-repeat: none;
+         background-repeat: no-repeat;
+         background-size: auto;
          -webkit-background-size: cover;
          -moz-background-size: cover;
          background-size: cover;
@@ -961,6 +979,22 @@ video#bgvid {
     opacity: .8;
     margin: 5px 0px;
     padding: 15px 0px 0px 0px;
+}
+
+@media(max-width: 800px) {
+    #services {
+        background-color: ##f7f7f7;
+    }
+    #services .textBox {
+        background-color: inherit;
+        border: none;
+        border-radius: 0px;
+        opacity: default;
+        margin: default;
+        padding: default; 
+        }
+        
+
 }
 
 #about {
@@ -986,3 +1020,7 @@ th {
     -o-background-size: cover;
 }
 */
+
+.col-sm-12 {
+    z-index: 1;
+}
