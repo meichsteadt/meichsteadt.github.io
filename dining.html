@@ -1,226 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+<meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>Furniture Store</title>
 
-    <!-- Bootstrap Core CSS -->
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="brand">Your Store Name Here</div>
-    <div class="address-bar">1234 Main St. | Sacramento, CA 95691 | (555) 555-5555</div>
-
-    <!-- Navigation -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="text-center top-bar"><p>Buy now for 30 days of<strong> free shipping</strong></p></div>
+    <div class="brand"><a href="index.html" id="name"></div></a>
+    <div class="address-bar" id="address"></div>
     <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Your Store Name Here</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="dining.html">Dining</a></li>
-                            <li><a href="#">Living Room</a></li>
-                            <li><a href="#">Bedroom</a></li>
-                        </ul>
-                        </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="brands.html">Brands</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" id="nameMobile" href="index.html"></a>
         </div>
-        <!-- /.container -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="living.html">Living</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="dining.html">Dining</a></li>              
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="brands.html">Brands We Carry</a></li>
+                <li><a href="delivery.html">Delivery Information</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Dining
-                        <strong>Gallery</strong>
-                    </h2>
-                    <hr>
+    <div class="container gallery">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="gallery-heading">Dining Gallery</h1>
+          <p class="gallery-body">At 'Furniture Store' we have dining room furniture to fit any home, whether it's a simple dining room or an elaborate formal dining room. We have a broad selection of dining room tables, pub tables, chairs, bars, bar stools, buffets, servers, china cabinets, and more. Come by 'Furniture Store' to see our showroom's wide selection of dining room furniture.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container gallery-caption">
+      <div class="row gallery">
+        <div class="col-md-4 text-center">
+                    <a href="dining1"><img class="img img-responsive shadow" src="img/products/dining/dining1.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Boulder Dining Room Table <br><span class="text-muted">(Furniture of America)</p>
                 </div>
-                <div class="col-lg-12 text-center">
-                    <p>Show some of your best dining sets here, people will love them! Just send us the high-res photos you want on there.</p>
-                    <p>(Bedroom and Living room gallery will look the same.)</p>
+                <div class="col-md-4 text-center">
+                    <a href="dining2"><img class="img img-responsive shadow" src="img/products/dining/dining2.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Torrington Dining Room Table <br><span class="text-muted">(Furniture of America)</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal1" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining1.jpg" alt=""></a>
+                <div class="col-md-4 text-center">
+                    <a href="dining3"><img class="img img-responsive shadow" src="img/products/dining/dining3.jpg" alt=""></a>
+                    <h4>9 pc. Table set</h4>
+                    <p>Bellagio Dining Room Table <br><span class="text-muted">(Furniture of America)</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal2" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining2.jpg" alt=""></a>
+              <br>
+                <div class="col-md-4 text-center">
+                    <a href="dining4"><img class="img-responsive shadow" src="img/products/dining/dining4.jpg" alt=""></a>
+                    <h4>9 pc. Table set</h4>
+                    <p>Ava Dining Room Table <br><span class="text-muted">(Furniture of America)</p>            
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal3" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining3.jpg" alt=""></a>
+                <div class="col-md-4 text-center">
+                    <a href="dining5"><img class="img-responsive shadow" src="img/products/dining/dining5.jpg" alt=""></a>
+                    <h4>9 pc. Table set</h4>
+                    <p>Melston Counter Height Table <br><span class="text-muted">(Furniture of America)</p>
+                </div>            
+                <div class="col-md-4 text-center">
+                    <a href="dining6"><img class="img-responsive shadow" src="img/products/dining/dining6.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Palisade Dining Room Table <br><span class="text-muted">(Furniture of America)</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal4" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining4.jpg" alt=""></a>
+            <br>
+                <div class="col-md-4 text-center">
+                    <a href="dining7"><img class="img-responsive shadow" src="img/products/dining/dining7.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Wiltshire Dining Room Table <br><span class="text-muted">(Coaster Furniture)</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal5" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining5.jpg" alt=""></a>
+                <div class="col-md-4 text-center">
+                    <a href="dining8"><img class="img-responsive shadow" src="img/products/dining/dining8.jpg" alt=""></a>
+                    <h4>9 pc. Table set</h4>
+                    <p>Dickinson Dining Room Table <br><span class="text-muted">(Furniture of America)</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#modal6" data-keyboard="true" data-toggle="modal"><img class="img-responsive" src="img/products/dining6.jpg" alt=""></a>
+                <div class="col-md-4 text-center">
+                    <a href="dining9"><img class="img-responsive shadow" src="img/products/dining/dining9.jpg" alt=""></a>
+                    <h4>5 pc. Table set</h4>
+                    <p>Paxton Dining Room Table <br><span class="text-muted">(Coaster Furniture)</p>
+                </div>
+            <br>
+                <div class="col-md-4 text-center">
+                    <a href="dining10"><img class="img-responsive shadow" src="img/products/dining/dining10.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Alston Dining Room Table <br><span class="text-muted">(Coaster Furniture)</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="dining11"><img class="img-responsive shadow" src="img/products/dining/dining11.jpg" alt=""></a>
+                    <h4>5 pc. Table set</h4>
+                    <p>Sofie Counter Height Table <br><span class="text-muted">(Coaster Furniture)</p>              
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="dining12"><img class="img-responsive shadow" src="img/products/dining/dining12.jpg" alt=""></a>
+                    <h4>7 pc. Table set</h4>
+                    <p>Antonelli Dining Room Table <br><span class="text-muted">(Coaster Furniture)</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
-    <!-- /.container -->
-    <!-- Modal -->
-        <div id="modal1" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining1.jpg" class="img-responsive">
-                    </div>
-                </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container marketing">
+    <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p id="copyright"></p>
+              <hr>
             </div>
+            <div class="col-lg-12 text-center">
+              <a id= "fb" href="" target ="_blank"></i></a>
+              <a id="ig" href="" target="_blank"></a>
+            </div>
+          </div>
         </div>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
 
-    <!-- Modal -->
-        <div id="modal2" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining2.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div><!-- /.container -->
 
-    <!-- Modal -->
-        <div id="modal3" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining3.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    <!-- Modal -->
-        <div id="modal4" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining4.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <!-- Modal -->
-        <div id="modal5" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining5.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <!-- Modal -->
-        <div id="modal6" class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/products/dining6.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>    
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p>Copyright &copy; Your Website 2016</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    <!-- jQuery -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+    <script src="js/link.js"></script>
+  </body>
 </html>
-
-<!--working on modal not being able to scroll once opened. It's annoying as shit! Texting out on modal-close in business-casual.css-->
